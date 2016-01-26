@@ -5,46 +5,46 @@
 '''
 
 offsets = [
-        '00',       # File header “SNES-SPC700 Sound File Data v0.30”
-        '21',       # 0x26, 0x26
-        '23',       # 0x26 = Header Has ID666 Information / 0x27 = Header Has No ID666 Tag
-        '24',       # Version Minor (i.e. 30)
-        '25',       # PC
-        '27',       # A
-        '28',       # X
-        '29',       # Y
-        '2A',       # PSW
-        '2B',       # SP (Lower Byte)
-        '2C',       # Reserved
-        '2E',       # Song Title
-        '4E',       # Game Title
-        '6E',       # Name of Dumper
-        '7E',       # Comments
-        '9E',       # Date SPC was Dumped (MM/DD/YYYY)
-        'A9',       # Number of Seconds to Play Song before Fading Out
-        'AC',       # Length of Fade in Milliseconds
-        'B1',       # Artist of Song
-        'D1',       # Default Channel Disables (0=Enable, 1=Disable)
-        'D2',       # Emulator used to dump SPC (0=unknown, 1=ZSNES, 2=Snes9x)
-        'D3',       # Reserved(0x00)
-        '2E',       # Song Title
-        '4E',       # Game Title
-        '6E',       # Name of Dumper
-        '7E',       # Comments
-        '9E',       # Date SPC was Dumped (YYYYMMDD)
-        'A2',       # Unused
-        'A9',       # Number of Seconds to Play Song before Fading Out
-        'AC',       # Length of Fade in Milliseconds
-        'B0',       # Artist of Song
-        'D0',       # Default Channel Disables (0=Enable, 1=Disable)
-        'D1',       # Emulator used to dump SPC (0=unknown, 1=ZSNES, 2=Snes9x)
-        'D2',       # Reserved (Set to 0x00)
-        '100',      # 64KB RAM
-        '10100',    # DSP Registers
-        '10180',    # Unused
-        '101C0',    # Extra RAM (Memory Region used when the IPL ROM region is set to read-only)
-        '10200',    # Extended ID666
-        '-1'        # EOF (as far as slices are concerned)
+        '0x00',       # File header “SNES-SPC700 Sound File Data v0.30”
+        '0x21',       # 0x26, 0x26
+        '0x23',       # 0x26 = Header Has ID666 Information / 0x27 = Header Has No ID666 Tag
+        '0x24',       # Version Minor (i.e. 30)
+        '0x25',       # PC
+        '0x27',       # A
+        '0x28',       # X
+        '0x29',       # Y
+        '0x2A',       # PSW
+        '0x2B',       # SP (Lower Byte)
+        '0x2C',       # Reserved
+        '0x2E',       # Song Title
+        '0x4E',       # Game Title
+        '0x6E',       # Name of Dumper
+        '0x7E',       # Comments
+        '0x9E',       # Date SPC was Dumped (MM/DD/YYYY)
+        '0xA9',       # Number of Seconds to Play Song before Fading Out
+        '0xAC',       # Length of Fade in Milliseconds
+        '0xB1',       # Artist of Song
+        '0xD1',       # Default Channel Disables (0=Enable, 1=Disable)
+        '0xD2',       # Emulator used to dump SPC (0=unknown, 1=ZSNES, 2=Snes9x)
+        '0xD3',       # Reserved(0x00)
+        '0x2E',       # Song Title
+        '0x4E',       # Game Title
+        '0x6E',       # Name of Dumper
+        '0x7E',       # Comments
+        '0x9E',       # Date SPC was Dumped (YYYYMMDD)
+        '0xA2',       # Unused
+        '0xA9',       # Number of Seconds to Play Song before Fading Out
+        '0xAC',       # Length of Fade in Milliseconds
+        '0xB0',       # Artist of Song
+        '0xD0',       # Default Channel Disables (0=Enable, 1=Disable)
+        '0xD1',       # Emulator used to dump SPC (0=unknown, 1=ZSNES, 2=Snes9x)
+        '0xD2',       # Reserved (Set to 0x00)
+        '0x100',      # 64KB RAM
+        '0x10100',    # DSP Registers
+        '0x10180',    # Unused
+        '0x101C0',    # Extra RAM (Memory Region used when the IPL ROM region is set to read-only)
+        '0x10200',    # Extended ID666
+        '-1'          # EOF (as far as slices are concerned)
 ]
 
 header_keys = [
