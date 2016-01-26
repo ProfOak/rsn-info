@@ -82,7 +82,7 @@ class SPC():
         self.registers = {}
         self.song = {}
         self.binary_song = {}
-        self.ram = ()
+        self.ram = {}
 
         tmp = 0
         for i, key in enumerate(header_keys):
@@ -105,12 +105,9 @@ class SPC():
             tmp += 1
         #print "binary"
 
-        '''
         for i, key in enumerate(ram_keys):
             self.ram[key] = _get_chunk(data, tmp, tmp+1)
             tmp += 1
-        print "ram"
-        '''
 
     def __str__(self):
         ''' game name: artists - song name '''
